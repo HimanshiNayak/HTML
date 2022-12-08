@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel form for a trip</h1>
+        <form action="form.php">
+            <input type="text" placeholder ="Enter your Name"><br>
+            <label for ="sectionida"><br>
+            <input type ="radio" value="section a" name="section" id="sectionida">Section A
+            </label>
+            <lable for ="sectionidb">
+            <input type ="radio" value="section b" name="section" id = "sectionidb">Section B
+            </label>
+            <label for=" sectionidc">
+                <input type ="radio" value="section c" name="section"id="sectionidc">Section C<br>
+            </label>
+            <!--the section name should be same for all , sectionid should be different for all-->
+            <input type="checkbox" name=" food canten " id = "foodcanten" class ="red"><br><br>
+            <label for ="foodcantend">want food canten card</label><!--we can get it by cliking the box only.-->
+            <textarea name ="explain" id ="explain" cols="30" rows ="10" placeholder ="explain why do you want to join."></textarea><br>
+            <select name="car" id ="car">
+                <option value="no-car">Select your car</option>
+                <option value="Thar">Thar</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value ="Ertica">Ertica</option>
+                <option value ="Dzire">Dzire</option> 
+                <option value ="i20">i20</option>
+
+            </select>
+            <!--one can have more than one class-->
+        </form>
+    </div>
+</body>
+</html>
