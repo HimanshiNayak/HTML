@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        
+        .container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* if we dec the size of the screen , the ele gets wrapped up. */
+            /* wrap:starts from the line below it 
+            wrap rev :- from upwards*/
+            justify-content: center;
+            /* allings the content horizontally */
+            align-items: center;
+            /* alligs it vertically */
+            /* a-i;flex end , brings the content to the end of the container  ...and so on*/
+            background-color: aqua;
+            height:150vh;
+            /* align-content: center; ;aligns the containers lines when exyra space is there*/
+        }
+    .box1{
+        height: 105px;
+        width: 145px;
+        background-color: rgb(74, 51, 246);
+        color:beige;
+        border: 2px solid black;
+        order:4;
+        /* align-self: flex-end; */
+        flex-grow: 4;
+        /* flex-shrink: 30; */
+        /* float: left; */
+        /* clear: left; */
+    }
+    .box2{ 
+        height: 105px;
+        width: 145px;
+        background-color:red;
+        color:beige;
+        border: 2px solid black;
+        /* float: right;
+        clear:left;  */
+    }
+    .box2b{ 
+        border:2px solid black;
+       
+
+    }
+    .box2c{
+       border: 2px solid black;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <!--1. float is  used to push some ele to right or left 
+    if two ele with the same float are there and space is there , they come in the same hor.line  -->
+<div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box2">box2b</div>
+    <div class="box2">box2c</div>
+</div>
+    <!-- 2.clear:- clears the float and specifies which ele can float beside the ele 
+    eg. clr right for b2 , removes b1 from its right and so on-->
+
+    <!-- pro . for flex items:-
+        1. oder :- default is 0 for all , on which no. its placed
+        2.align-self:- doesn't follows the container's inst . rather follows the one given here
+        3.flex -grow;- defines ability of a flex item to grow..depends on the flex direction:-row then width and if column then height
+        4.flex shrink:- specifies how much it will shrink relative to others
+        >
+
+
+</body>
+</html>

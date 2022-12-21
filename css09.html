@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform </title>
+    <style>
+.container{
+    background-color:purple;
+    color: darkgreen;
+    /* border: 13px solid black; */
+    width:133vw;
+    height:500vh;
+}
+.box{
+border:2px solid black;
+color:blue;
+height:13px;
+width:133vw;
+/* transform:translate(23px);
+/* shifts it to the side */
+
+/* transform:rotate(105deg); */ 
+/* rotates it */
+
+/* transform:scale(2,2); */
+/* enlargesthe ele that many times */
+/* can be done sepe.for both the axises */
+
+/* transform:skew(4deg,6deg); */
+/* distorts the ele at some angle from both or one axis */
+
+/* transform:matrix(); */
+/* helps to add all of them together */
+
+}
+img{
+    height:455px;
+    /* initial pro */
+    transition-property: height;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    /* transition-delay: 2s; */
+
+}
+img:hover{
+    height: 56px;
+    /* final prop. */
+}
+ /* transitions:-change values smoothly , over a given duration
+ 1. transition property:width, height(the prop we want to transition in)
+ 2.tran.duration:time for whivh we want to apply
+ 3.transition timing func:-how we want the ele to feComponentTransfer
+ 4.trans delay:specifies delay for transition */
+
+
+    </style>
+
+</head>
+<!-- used to move rotate and skew etc., create 3d effect -->
+
+<body>
+    <div class="container">
+       
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum itaque cum odit?dfghjkjhgfghjkljhghjhg
+            <img src="https://images.unsplash.com/photo-1670889505554-c71ef4bc9fa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=350&q=50"width:24px>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<!-- transform origin prop:- 2d as wel as 3d 
+2d
+1.translate() :-shifts the ele(x,y)
+2.rotate(); rot. the ele wrtaxis to the  given 
+no.       of turns  -->

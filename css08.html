@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: yellow;
+        }
+.container{
+    display:grid;
+    background-color:chartreuse;
+    grid-row-gap: 2px;
+    grid-column-gap:2px;
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 45vw 45vw;
+    /* the no. of times we write auto is the no. of columns we get */
+    /* it is basically taking the width of the column */
+    /* grid-template-rows: 4vw 4vw; */ 
+    grid-template-columns: auto auto auto auto;
+    grid-gap:2px 2px;
+    /* shorthand for the gaps : rows  columns */
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.item{
+    background-color: brown;                                                                                                                                                 
+    border:3px solid black;
+    width:18vw;
+    height:53px;
+justify-content: space-evenly;
+}
+    .item1{
+        grid-column: 1/ span5;
+        /* spreads one in give no. of cols. */
+        background-color: brown;                                                                                                                                                 
+    border:3px solid black;}
+  
+    .box{
+        background-color: darkgreen;
+        color: darkorange;
+        width:37vw;
+        height:44vh;
+        border: 33px solid black;
+    }
+    @media screen  and (max-width: 600px){
+        
+    
+        .box{
+            background-color:darkblue;
+            border:23px solid rgb(235, 52, 52);
+            color:darkmagenta;
+            height:150vh;
+        
+           
+        }
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempora beatae aspernatur sint nesciunt deleniti at necessitatibus quas, excepturi explicabo facere. Voluptates id facere libero consequuntur quam iure, quibusdam assumenda nobis, sed eum ex hic rerum voluptatibus reiciendis. Magni repellendus corrupti distinctio debitis exercitationem cupiditate ullam. Assumenda quibusdam dicta autem amet maxime accusamus minima quia commodi, beatae nobis voluptates provident perferendis reiciendis temporibus tempora facilis cumque impedit nisi, nostrum quisquam quos. Beatae eos aspernatur facere nesciunt rerum, non officiis, dolore quidem eveniet aliquam voluptas nobis eaque, reiciendis velit. Accusantium, eos. Exercitationem, incidunt? Totam excepturi, dolorum non quas ut iste rem odio harum ab molestiae doloribus commodi et incidunt quam tenetur!</div>
+    
+</body>
+</html>

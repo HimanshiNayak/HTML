@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(91, 11, 52);
+        }
+       
+        .box{
+            background-color:khaki;
+            color: black;
+            width:23vw;
+            height:23vh;
+            animation-name: animatewidth;
+            animation-duration: 2s;
+            animation-delay: .2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: 5;
+            animation-timing-function: 0.3sec;
+        }
+                
+            /* /* shortend ;-
+            animation: name duration timing function delay  iteration count  direction
+         */
+        img{
+            width:10vw;
+            height:10vh;
+            animation-name: animate;
+            animation-duration: 4s;
+            animation-delay: .3s;
+            animation-direction:alternate;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        
+        
+
+
+        
+        @keyframes animatewidth{
+            from{
+                width:23vw;
+                height:23vh;
+            }
+            to{
+                width:100vw;
+                height:100vh;
+            }
+            /* 0%{
+                function
+            } 
+            100%{
+            }*/
+        }
+        @keyframes animate {
+            from{
+                width: 10vw;
+                height:10vh;
+                
+            }
+            to {
+                width:30vw;
+                height:30vh;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">This is a box.</div>
+
+    <div class="box1">
+        <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg" >
+    </div>
+    classb1
+   
+    
+        
+   
+    
+    
+</body>
+</html>

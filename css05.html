@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block elements</title>
+<!-- tell us how we can put a thing , which takes the whole width side by side -->
+<style>
+    .red{
+        width:231px;
+        height: 34px;
+        background-color: red;
+       display:inline ; 
+       text-align: center;
+        
+    }
+    .blue{
+        width: 231px;
+        height:34px;
+        background-color: blue;
+        display:inline;
+        text-align: end;
+        /* takes only the space required by the ele.No linebreaks befoere nd after, setting width , height , top bottom margin padding , not allowed */
+    }
+    .green{
+        width: 231px;
+        height:34px;
+        background-color: rgb(29, 233, 33);
+        margin: 34px;
+        padding: 34px;
+        display:inline-block;
+        text-align: left;
+
+    }
+    .yellow{
+        width: 231px;
+        height:34px;
+        background-color: yellow;
+        margin: 93px;
+        padding:93px;
+        display:inline-block;
+        text-align: right;
+    }
+    /* similar to inline , but setting margin , padding , width , height are allowed, ele can sit next to each other */
+    .violet{
+        width: 231px;
+        height:34px;
+        background-color:violet;
+        display:none;
+    }
+    /* ele. removed from the display flow and its space is not blocked */
+    .crimson{
+        width: 231px;
+        height:34px;
+        background-color:rgb(243, 135, 157);
+        display:hidden;
+        text-align: end;
+    }
+    /* ele. is hidde but its space is there */
+    .pink{
+        
+    
+        width: 231px;
+        height:34px;
+        background-color: rgb(148, 4, 69);
+        margin: 14px;
+        padding: 14px;
+        display:block;
+        text-align: left;
+    }
+    .brown{
+        width: 231px;
+        height:34px;
+        background-color: rgb(233, 108, 59);
+        margin: 10px ;
+        padding: 10px;
+        display:block;
+        text-align: right;
+    }
+    /* takes full space available in width and leaves a newbie befre and after the ele */
+    p{
+        background-color: rgb(96, 57, 133);
+        color: cornsilk;
+        width: 102px;
+        height: 112px;
+         text-decoration-line: underline;
+         /* use the underline onefor links only */
+         text-decoration-color: black; 
+         margin: 10px;
+         text-align: center;
+         padding:22px ;
+         line-height:normal ;
+         /* the distance btw two lines  */
+         font-size :16px;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+         /* ye nhi lgi toh next wali */
+
+         /* for multiple values */
+         font:bolder
+         /* to make the thing main */
+
+         /*  */
+
+
+        }
+
+</style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum inventore </p>
+    <!-- to put  elements  side by side -->
+    <div class="red">
+        Lorem elit. Facere, reprehenderit! Neque, soluta!
+    </div>
+    <div class="blue">
+        Lorem ipsum dolor sit amet consectetur e consectetur!
+    </div>
+    <div class="green">
+        Lorem l cum, ab perspiciatis eius mollitia saepe?
+    </div>
+    <div class="yellow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="pink">
+        Lorem ipsum dolor sit amet consectetur 
+    </div>
+    
+    <div class="violet">
+        Lorem ipsum dolor sit amet consectetur t. 
+    </div>
+    <div class="brown">
+        Lorem ipsum dolor sit amet consectetu. 
+    </div>
+    <div class="crimson">
+        Lorem ipsum dolor sit amet consecing elit. 
+    </div>
+
+   <p1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eaque nemo animi.</p1>
+    <!-- we put . only for the class , rest ll are like that only -->
+
+
+
+    <!--   text allingment - ::-- to set horizontal allingment to the text- -->
+    <!-- text decoration:: to decorate the text , underline , overline,line-through , none
+     -->
+    
+    
+</body>
+</html>

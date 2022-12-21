@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size and position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .red{
+            mask-position: sticky;
+            margin: 4vw 4vh;
+            width:20vw;
+            height:40vh;
+            background-color: green;
+            
+        }
+       .blue{
+        position:static;
+             width:40%;
+             height:60vh;
+             background-color: crimson;
+             margin:18vw 18vh;
+             display :block;
+       }
+       .one{
+        position:absolute;
+        top:30%;
+        left:53%;
+        background-color: red;
+        width: 16vw;
+        height:40vh;
+        margin:24vw 24vh;
+        display:block
+       }
+/* with absoulte , changes its position acc to html tag as all the other parents are not non static  */
+.two{
+    position:relative;
+        top:23px;
+        left:23px;
+        background-color: rgb(80, 17, 17);
+        width: 86px;
+        height: 93px;
+        color: beige;
+        
+        
+
+
+}
+ /* if we make the parent class as the non static one ie , relative or absolute , then now the absolute one will move according to this not the html tag as this is the first non static element */
+
+ .three{
+    position:fixed;
+        top:23px;
+        left:23px;
+        background-color: rgb(74, 164, 128);
+        /* width: 6px;
+        height:40px; */
+
+ }
+ /* when we scroll the page , it wont move */
+
+
+ /* ele is positioned based on the scroll */
+ 
+    </style>
+
+</head>
+<!-- px is relative to the device on which we are playing it thus problem-->
+<!-- relative lengths :- they are relative to the other length prop.;
+em- givs the font  relative to thethe parent to the other things -->
+<!-- eg. 3em is 3 *the size of the uppper one-->
+
+<!-- rem:-gives the font relative to th html tag -->
+<!-- 
+
+    MOST USED :-
+    vw :- for width , changes size acc to different devices
+    vh:- for height, changes the size acc to doffenrt devices
+ -->
+ <!-- % :- withrelative to the parent elemnt -->
+
+ <!-- min/max width /height  :- they are used when we want our ele to be in some range only . , if we already assign them and then if we try to add the height / width greater / smmalre then them , wont happen-->
+ <div class ="red">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores ab ut laboriosam repellat quae sed magni eum cum maxime ducimus, reprehenderit iusto exercitationem officiis. Omnis libero molestiae illo? Accusamus ea non autem.
+ </div>
+   <div class="blue">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, placeat perspiciatis. Facilis, voluptate hic.
+    
+<div class="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae quisquam nostrum distinctio!</div>
+<div class="two">Lorem ipsum dolor sit amet </div>
+   </div>
+   <div class="three">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate pariatur laboriosam!
+   </div>
+<div class="four">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse ea soluta mollitia nemo inventore ut laborum tempora minus harum expedita aliquid voluptatum ipsum, numquam delectus suscipit, impedit, quis alias. Nesciunt voluptates mollitia voluptatum dolore.
+
+</div>
+
+
+
+<body>
+   
+    <!-- position :- 
+    1. static :- the default one , it wont move anywhere 
+2. relative :- it can move now
+3. absolute :- the ele is removed from the flow and is relatively positioned to its first nonstatic ancestor . top /bottom etc works , its there but gets hidden , when none are there in relative to the html tag
+5.z index:- tells which one will be upper or lower->
+6.life - style property:- shortened for all:-(type , position , and image)
+life-style: square    inside         url('.jpg')
+            lifestyle  ls position   ls image
+
+
+</body>
+</html>
