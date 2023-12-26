@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#t{
+border:20px double #163020;
+height:700px;
 
+}
+h1{
+    color:rgb(4, 4, 47);
+    text-decoration: underline overline;
+    text-shadow: 5px 5px 5px skyblue;
+    text-align: center;
+    font-size: 70px;
+}
+#x{
+    height:200px;
+    width:200px;
+    background:red;
+    text-align: center;
+    display: inline-block;
+    /* display: block; */
+    font-size:25px;
+    font-weight: bold;   
+    margin-left: 45px;
+    margin-top: 50px;
+}
+#y{
+    height:200px;
+    width:200px;
+    background:rgb(42, 33, 145);
+    text-align: center;
+    display:inline-block;
+    /* display: block; */
+    font-size:25px;
+    font-weight: bold;  
+    margin-left:45px;
+}
+#z{
+    height:200px;
+    width:200px;
+    background:rgb(22, 162, 48);
+    text-align: center;
+    display:inline-block;
+    /* display: block; */
+    font-size:25px;
+    font-weight: bold;  
+    margin-left:45px;
+   
+}
+    </style>
+</head>
+<body>
+    <div id="t">
+    <h1><b><em>The CSS display property</em></b></h1>
+    <div id="x">red box</div>
+    <div id ="y">blue box</div>
+    <div id="z">green box</div>
+    </div>
+</body>
+</html>
