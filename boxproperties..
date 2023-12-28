@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href ="sstyle.css"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville:wght@700&family=Merriweather&family=Montserrat&family=Roboto:ital,wght@1,100&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .h{
+    background:palevioletred;
+    color:antiquewhite;
+    width:60%;
+    margin-top:10%;
+    margin-left:auto;
+    margin-right:auto;
+    height:110px;
+    font-size: 75px;
+    text-align: center;
+    text-decoration:  underline overline;
+    font-weight: bold;
+    padding-top: 20px;
+    box-shadow: 10px 10px grey;
+    border-radius: 10px;
 
+}
+.i{
+    font-size: 65px;
+    font-weight: 500;
+    font-family: Dancing Script;
+    color:crimson;
+    text-align: center;
+    padding-top:25px;
+    text-shadow: 2px 2px rgb(247, 154, 166) ;
+}
+.j{
+    background:palevioletred;
+    color:antiquewhite;
+    width:60%;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    height:110px;
+    font-size: 75px;
+    text-align: center;
+    text-decoration:  underline overline;
+    font-weight: bold;
+    padding-top: 20px;
+    box-shadow: 10px 10px grey;
+    border-radius: 10px;
+
+}
+.k{
+    font-size: 65px;
+    font-weight: 500;
+    font-family: Dancing Script;
+    color:crimson;
+    text-align: center;
+    padding-top:25px;
+    text-shadow: 2px 2px rgb(247, 154, 166) ;
+}
+.a{
+    border:2px double rgb(146, 49, 102) ;
+    background: peachpuff;
+    padding:2px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.u{
+    text-align: right;
+}
+
+    </style>
+</head>
+<body>
+    <div class ="a">
+        <div class="s"><img  width="50px" src="j.jpg.png"/></div>
+        <div class="t"><img  width="50px" src="j.jpg.png"/></div>
+
+    <div class="h">Hope</div>
+    <div class="i">shines the brightest in the</div>
+    <div class="j">Darkest</div>
+    <div class ="k">times.</div>
+    <div class="u"><img  width="50px" src="j.jpg.png"/></div>
+    <div class="u"><img  width="50px" src="j.jpg.png"/></div>
+    </div>
+</body>
+</html>
